@@ -23,6 +23,7 @@
 
         <Button
             android:id="@+id/true_button"
+            style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -33,6 +34,7 @@
 
         <Button
             android:id="@+id/false_button"
+            style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -42,13 +44,32 @@
             app:backgroundTint="#D6D7D7" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/next_button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:insetRight="0dp"
-        android:text="@string/button_next"
-        android:textColor="#000011"
-        app:backgroundTint="#D6D7D7" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prompt_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/button_hint"
+            android:textColor="#000000"
+            app:backgroundTint="#FFEB3B" />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/button_next"
+            android:textColor="#000000"
+            app:backgroundTint="#00BCD4" />
+    </LinearLayout>
 
 </LinearLayout>
